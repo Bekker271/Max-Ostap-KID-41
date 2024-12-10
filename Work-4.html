@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Flexbox Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #212121;
+            color: white;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .header .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .header .icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header .icons div {
+            width: 32px;
+            height: 32px;
+            background-color: #444;
+            border-radius: 50%;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .sidebar {
+            width: 240px;
+            background-color: #fff;
+            border-right: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .video {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .video img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .video h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .video p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">YouTube</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук">
+        </div>
+        <div class="icons">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="main">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Тренди</a></li>
+                    <li><a href="#">Підписки</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content">
+            
+        
+            <div class="video">
+                
+                <iframe width="1280" height="640" src="https://www.youtube.com/embed/AesQB9F6upU" title="Грандиозный американец за 130 тысяч. Chrysler New Yorker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Грандиозный американец за 130 тысяч. Chrysler New Yorker</h3>
+                <p>Опис відео</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

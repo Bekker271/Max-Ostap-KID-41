@@ -1,0 +1,51 @@
+/* Variables */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #1abc9c;
+  --text-color: #ffffff;
+  --font-family: 'Arial, sans-serif';
+  --spacing: 16px;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing);
+  color: var(--secondary-color);
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro__text {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing);
+}
+
+.button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: var(--spacing);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #148f77;
+}

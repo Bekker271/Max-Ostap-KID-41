@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Page</title>
+    <style>
+        /* Встановлення кастомних шрифтів */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Встановлення Grid розмітки */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form input[type="text"],
+        .form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h2>Розділ 1</h2>
+            <form class="form">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Клікабельний чекбокс</label>
+                </div>
+                <input type="text" placeholder="Введіть текст">
+            </form>
+        </div>
+        <div class="item">
+            <h2>Розділ 2</h2>
+            <form class="form">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Інший чекбокс</label>
+                </div>
+                <textarea placeholder="Введіть більше тексту"></textarea>
+            </form>
+        </div>
+        <div class="item">
+            <h2>Розділ 3</h2>
+            <p>Цей блок адаптивний і буде змінювати розміри залежно від ширини екрану.</p>
+        </div>
+    </div>
+</body>
+</html>

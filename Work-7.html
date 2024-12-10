@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Clothing Collection</title>
+    <style>
+        /* Встановлення кастомних шрифтів */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header__title {
+            font-size: 2.5rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .intro__description {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button__cta {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+
+        .button__cta:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">New Clothing Collection</h1>
+        </header>
+        <section class="intro">
+            <p class="intro__description">Discover our latest trends and styles. Be the first to wear the future.</p>
+        </section>
+        <div class="button">
+            <button class="button__cta" onclick="handleClick()">Learn More</button>
+        </div>
+    </div>
+    <script>
+        function handleClick() {
+            window.location.href = 'https://example.com'; // Замінити на потрібне посилання
+        }
+    </script>
+</body>
+</html>
